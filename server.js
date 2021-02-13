@@ -55,7 +55,7 @@ registerRoutes.route('/delete').post(function(req,res){
         console.log(deleted)
     } )
 })
-app.listen(3004, () =>{
+app.listen(process.env.PORT || 3002, () =>{
 
  console.log("Server is running in port 3004")
 })
